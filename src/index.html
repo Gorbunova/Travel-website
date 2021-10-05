@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JustTravel</title>
+    <meta name="title" content="JustTravel">
+    <meta name="description" content="Мы команда JustTravel, и путешествия для нас - не бизнес, а стиль жизни!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="JustTravel">
+    <meta property="og:description" content="Мы команда JustTravel, и путешествия для нас - не бизнес, а стиль жизни!">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="JustTravel">
+    <meta property="twitter:description" content="Мы команда JustTravel, и путешествия для нас - не бизнес, а стиль жизни!">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <link rel="shortcut icon" href="icons/mountain-icon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu_list">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Туры</a></li>
+            <li><a href="#">Команда</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <section class="promo">
+        <div class="promo__logo">
+            <img class="promo__logo-icon" src="icons/mountain-icon.svg" alt="logo-icon">
+            <h1 class="promo__logo-text">JustTravel</h1>
+        </div>
+        <div class="promo__prompt">Нажмите на изображение</div>
+        <div class="promo__carousel">
+            <div class="promo__slide">
+                <picture>
+                    <source media="(max-width: 576px)" srcset="img/promo_bg/norway-mobile.jpeg">
+                    <img src="img/promo_bg/norway.jpg" alt="norway" class="promo__slide-img">
+                </picture>
+                <div class="promo__slide-descr">Норвегия</div>
+            </div>
+            <div class="promo__slide">
+                <picture>
+                    <source media="(max-width: 576px)" srcset="img/promo_bg/iceland-mobile.jpeg">
+                    <img class="promo__slide-img" src="img/promo_bg/iceland.jpg" alt="photo">
+                </picture>
+                <div class="promo__slide-descr">Исландия</div>
+            </div>
+            <div class="promo__slide">
+                <picture>
+                    <source media="(max-width: 576px)" srcset="img/promo_bg/finland-mobile.jpeg">
+                    <img src="img/promo_bg/finland.jpg" alt="finland" class="promo__slide-img">
+                </picture>
+                <div class="promo__slide-descr">Финляндия</div>
+            </div>
+            <div class="promo__slide">
+                <img src="img/promo_bg/georgia.jpg" alt="georgia" class="promo__slide-img">
+                <div class="promo__slide-descr">Грузия</div>
+            </div>
+            <div class="promo__slide">
+                <picture>
+                    <source media="(max-width: 576px)" srcset="img/promo_bg/vietnam-mobile.jpeg">
+                    <img src="img/promo_bg/vietnam.jpg" alt="vietnam" class="promo__slide-img">
+                </picture>
+                <div class="promo__slide-descr">Вьетнам</div>
+            </div>
+        </div>    
+            
+        <img class="promo__woman" src="img/promo_bg/woman_back.png" alt="woman">
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2 class="title">Немного о нас</h2>
+            <p class="about__descr">“Мы команда JustTravel, <br>
+                и путешествия для нас - не бизнес, а стиль жизни”</p>
+            <ul class="about__benefits">
+                <li>Работаем по договору</li>
+                <li>Группы до 12 человек</li>
+                <li>Опыт работы 14 лет</li>
+                <li>Индивидуальный подход</li>
+                <li>Самые выгодные туры</li>
+            </ul>
+            <button class="button">Выбрать тур</button>
+            <div class="about__carousel">
+                <div class="about__carousel-inner">
+                    <img src="img/about_slider/slide1.jpg" alt="slide1">
+                    <img src="img/about_slider/slide2.jpeg" alt="slide2">
+                    <img src="img/about_slider/slide3.jpeg" alt="slide3">
+                    <img src="img/about_slider/slide4.jpeg" alt="slide4">
+                    <img src="img/about_slider/slide5.jpeg" alt="slide5">
+                </div>
+                <div class="about__carousel-nav">
+                    <input checked class="about__carousel-input" type="radio" id="about-slide1" name="slide-number" value="0">
+                    <label class="about__carousel-label" for="about-slide1"></label>
+
+                    <input type="radio" id="about-slide2" name="slide-number" value="1">
+                    <label class="about__carousel-label" for="about-slide2"></label>
+
+                    <input type="radio" id="about-slide3" name="slide-number" value="2">
+                    <label class="about__carousel-label" for="about-slide3"></label>
+
+                    <input type="radio" id="about-slide4" name="slide-number" value="3">
+                    <label class="about__carousel-label" for="about-slide4"></label>
+
+                    <input type="radio" id="about-slide5" name="slide-number" value="4">
+                    <label class="about__carousel-label" for="about-slide5"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why">
+        <div class="container">
+        <div class="why__divider">
+            <img src="img/mountain divider.svg" alt="mountain-divider">
+        </div>
+            <h2 class="why__title">Почему мы</h2>
+            <ul class="why__reasons">
+                <li class="why__reasons-item">
+                    <img src="icons/why-icons/experience.svg" alt="">
+                    <span>14</span>лет опыта</li>
+                <li class="why__reasons-item">
+                    <img src="icons/why-icons/tours.svg" alt="">
+                    <span>400</span>туров</li>
+                <li class="why__reasons-item">
+                    <img src="icons/why-icons/customers.svg" alt="">
+                    <span>97</span>клиентов в месяц</li>
+                <li class="why__reasons-item">
+                    <img src="icons/why-icons/mountain.svg" alt="">
+                    <span>200</span>походов в горы</li>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="tours">
+        <div class="container">
+            <h2 class="title">Ближайшие туры</h2>
+            <div class="tours__slider">
+                <div class="country">
+                    <div class="country__title">Швейцария</div>
+                    <div class="country__content">
+                        <p class="country__descr">
+                            <span>Швейцария</span> - страна банков, часов и шоколада. Страна стала воплощением шика и роскоши. Швейцария удачно расположилась в самом центре Европы, здесь, даже не пересекая границы, можно побывать во Франции, Германии и Италии. Швейцарию так и называют «страной трех культур». Вся территория поделена на немецкую, французскую и италийскую, и в каждом из этих районов разговаривают на родном языке и придерживаются традиций своего народа.
+                        </p>
+                        <div class="country__details">
+                            <div class="country__details-item days">10 дней</div>
+                            <div class="country__details-item price">от 1500 EUR</div>
+                            <div class="country__details-item date">30.10.2021</div>
+                        </div>
+                        <button class="button">Оставьте заявку</button>
+                    </div>
+                </div>
+
+                <div class="country">
+                    <div class="country__title">Япония</div>
+                    <div class="country__content">
+                        <p class="country__descr">
+                            <span>Намибия</span> - страна банков, часов и шоколада. Страна стала воплощением шика и роскоши. Швейцария удачно расположилась в самом центре Европы, здесь, даже не пересекая границы, можно побывать во Франции, Германии и Италии. Швейцарию так и называют «страной трех культур». Вся территория поделена на немецкую, французскую и италийскую, и в каждом из этих районов разговаривают на родном языке и придерживаются традиций своего народа.
+                        </p>
+                        <div class="country__details">
+                            <div class="country__details-item days">10 дней</div>
+                            <div class="country__details-item price">от 1500 EUR</div>
+                            <div class="country__details-item date">30.10.2021</div>
+                        </div>
+                        <button class="button">Оставьте заявку</button>
+                    </div>
+                </div>
+
+                <div class="country">
+                    <div class="country__title">Намибия</div>
+                    <div class="country__content">
+                        <p class="country__descr">
+                            <span>Швейцария</span> - страна банков, часов и шоколада. Страна стала воплощением шика и роскоши. Швейцария удачно расположилась в самом центре Европы, здесь, даже не пересекая границы, можно побывать во Франции, Германии и Италии. Швейцарию так и называют «страной трех культур». Вся территория поделена на немецкую, французскую и италийскую, и в каждом из этих районов разговаривают на родном языке и придерживаются традиций своего народа.
+                        </p>
+                        <div class="country__details">
+                            <div class="country__details-item days">10 дней</div>
+                            <div class="country__details-item price">от 1500 EUR</div>
+                            <div class="country__details-item date">30.10.2021</div>
+                        </div>
+                        <button class="button">Оставьте заявку</button>
+                    </div>
+                </div>
+
+                <div class="country">
+                    <div class="country__title">Исландия</div>
+                    <div class="country__content">
+                        <p class="country__descr">
+                            <span>Швейцария</span> - страна банков, часов и шоколада. Страна стала воплощением шика и роскоши. Швейцария удачно расположилась в самом центре Европы, здесь, даже не пересекая границы, можно побывать во Франции, Германии и Италии. Швейцарию так и называют «страной трех культур». Вся территория поделена на немецкую, французскую и италийскую, и в каждом из этих районов разговаривают на родном языке и придерживаются традиций своего народа.
+                        </p>
+                        <div class="country__details">
+                            <div class="country__details-item days">10 дней</div>
+                            <div class="country__details-item price">от 1500 EUR</div>
+                            <div class="country__details-item date">30.10.2021</div>
+                        </div>
+                        <button class="button">Оставьте заявку</button>
+                    </div>
+                </div>
+
+                <div class="country">
+                    <div class="country__title">Финляндия</div>
+                    <div class="country__content">
+                        <p class="country__descr">
+                            <span>Швейцария</span> - страна банков, часов и шоколада. Страна стала воплощением шика и роскоши. Швейцария удачно расположилась в самом центре Европы, здесь, даже не пересекая границы, можно побывать во Франции, Германии и Италии. Швейцарию так и называют «страной трех культур». Вся территория поделена на немецкую, французскую и италийскую, и в каждом из этих районов разговаривают на родном языке и придерживаются традиций своего народа.
+                        </p>
+                        <div class="country__details">
+                            <div class="country__details-item days">10 дней</div>
+                            <div class="country__details-item price">от 1500 EUR</div>
+                            <div class="country__details-item date">30.10.2021</div>
+                        </div>
+                        <button class="button">Оставьте заявку</button>
+                    </div>
+                </div>
+
+                <div class="country">
+                    <div class="country__title">Грузия</div>
+                    <div class="country__content">
+                        <p class="country__descr">
+                            <span>Швейцария</span> - страна банков, часов и шоколада. Страна стала воплощением шика и роскоши. Швейцария удачно расположилась в самом центре Европы, здесь, даже не пересекая границы, можно побывать во Франции, Германии и Италии. Швейцарию так и называют «страной трех культур». Вся территория поделена на немецкую, французскую и италийскую, и в каждом из этих районов разговаривают на родном языке и придерживаются традиций своего народа.
+                        </p>
+                        <div class="country__details">
+                            <div class="country__details-item days">10 дней</div>
+                            <div class="country__details-item price">от 1500 EUR</div>
+                            <div class="country__details-item date">30.10.2021</div>
+                        </div>
+                        <button class="button">Оставьте заявку</button>
+                    </div>
+                </div>
+                
+                <div class="tours__img-slider">
+                    <img src="img/tours_slider/slide1.jpg" alt="swadz">
+                    <img src="img/tours_slider/Japan.jpg" alt="japan">
+                    <img src="img/tours_slider/namibiia.jpg" alt="namibia">
+                    <img src="img/tours_slider/iceland.jpeg" alt="iceland">
+                    <img src="img/tours_slider/finland.jpeg" alt="finland">
+                    <img src="img/tours_slider/georgia.jpeg" alt="georgia">
+
+                </div>
+                <a href="#" class="tours__navigation prev">
+                    <img src="icons/left-icon.svg" alt="previous">
+                </a>
+                <a href="#" class="tours__navigation next">
+                    <img src="icons/right-icon.svg" alt="next">
+                </a>
+            </div>
+            
+        </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <div class="title-wrapper">
+                <h2 class="title title_dark title_center">Наша команда</h2>
+            </div>
+            <div class="team__slider">
+                <div class="team__slider-item">
+                    <div class="team__slider-photo">
+                        <img src="img/team_slider/team1.jpg" alt="Ivan">
+                    </div>
+                    <div class="team__slider-descr">
+                        <h3 class="team__slider-name">Иван Иванов</h3>
+                        <p class="team__slider-text">Иван очень хороший путешественник. 20 лет в нашей команде. Преодолел 10000 км. Иван очень хороший путешественник. 20 лет в нашей команде. Преодолел 10000 км. Иван очень хороший путешественник. 20 лет в нашей команде. Преодолел 10000 км.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>

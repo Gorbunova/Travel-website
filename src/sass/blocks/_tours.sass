@@ -1,0 +1,120 @@
+.tours
+    background-color: $main-color-dark
+    padding: 80px 0
+    overflow: hidden
+    position: relative
+    &__slider
+        position: relative
+    &__img-slider
+        position: absolute
+        top: 0
+        right: 0
+        margin-top: 115px
+        height: 320px
+        width: 500px
+        
+        img
+            position: absolute
+            padding: 10px
+            height: 100%
+            width: 100%
+            object-fit: cover
+            transition: 1s all
+            display: none
+            
+        .main
+            /** filter: blur(10px) **/
+            transition: 1s all
+            opacity: 1
+            display: block
+            &.active
+                filter: none
+        .next
+            display: block
+            width: 110%
+            height: 110%
+            transform: rotate(20deg) translate(0px,-430px)
+            filter: blur(7px)
+            opacity: 1
+        .prev
+            width: 65%
+            height: 65%
+            transform: rotate(-15deg) translate(55px,420px)
+            filter: blur(10px)
+            opacity: 1
+            display: block
+        .after-next
+            width: 110%
+            height: 110%
+            transform: rotate(20deg) translate(0px,-600px)
+            opacity: 0
+            display: block
+        .before-prev
+            width: 65%
+            height: 65%
+            transform: rotate(-15deg) translate(55px,500px)
+            opacity: 0
+            display: block
+
+    &__navigation
+        position: absolute
+        width: 40px
+        top: 50%
+        
+        transform: translateY(-50%)
+        opacity: .5
+        transition: .5s all
+        &:hover
+            opacity: 1
+    &__navigation.prev
+        left: -80px
+    &__navigation.next    
+        right: -80px
+
+
+
+.country
+    transition: 1s all
+    &__title
+        transform: translateX(-50px)
+        font-weight: bold
+        font-size: 70px
+        letter-spacing: 30px
+        text-transform: uppercase
+        color: rgba(221, 245, 255, 0.5)
+        margin-top: 20px
+    &__content
+        width: 600px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__descr
+        font-size: 18px
+        line-height: 29px
+        letter-spacing: 3px
+        color: #fff
+        margin-bottom: 0
+        span
+            color: $main-color-blue
+            font-weight: bold
+    &__details
+        margin-top: 20px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        margin-bottom: 10px
+        &-item
+            text-align: center
+            width: 170px
+            padding: 5px 20px
+            font-size: 16px
+            letter-spacing: 3px
+            color: #fff
+            border:  1px solid #fff
+            border-radius: 15px
+            animation: increase 1s infinite alternate
+
+@keyframes increase
+    to
+        border:  1px solid $main-color-blue
+        transform: translateY(5px)

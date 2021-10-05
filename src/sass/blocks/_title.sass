@@ -1,0 +1,44 @@
+.title
+    font-weight: 700
+    font-size: 28px
+    line-height: 28px
+    letter-spacing: 10px
+    color: #fff
+    text-transform: uppercase
+    white-space: nowrap
+    overflow: hidden
+    &::after
+        content: ""
+        display: block
+        width: 150px
+        height: 3px
+        margin-top: 15px
+        background-color: #1F98CC
+    &_dark
+        color: $main-color-dark
+    &_center
+        text-align: center
+        &::after
+            margin: 15px auto 0 auto
+    &.active
+        border-right: 2px solid rgba(255,255,255,.75)
+        animation: typewriter 2s steps(44) .3s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal
+    &-wrapper
+        display: flex
+        justify-content: center
+        
+@keyframes typewriter
+    from
+        width: 0
+    to
+        width: 50%
+
+@keyframes blinkTextCursor
+    from
+        border-right-color: rgba(255,255,255,.75)
+    to
+        border-right-color: transparent
+
+
+
+        
