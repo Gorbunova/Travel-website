@@ -12,6 +12,8 @@ doc.addEventListener("DOMContentLoaded", function() {
     animate();
     aboutSlider();
     toursSlider();
+    teamInit();
+
 });
 
 function promoInit() {
@@ -22,4 +24,16 @@ function promoInit() {
     menu.classList.add('active');
 
     promoSlider();
+}
+
+function teamInit() {
+    const teamPhotos = doc.querySelectorAll('.team__slider-photo');
+    teamPhotos.forEach(item=> {
+        item.addEventListener('mouseover', ()=>{
+            item.nextElementSibling.style.maxHeight = '300px';
+        });
+        item.addEventListener('mouseout', ()=>{
+            item.nextElementSibling.style.maxHeight = '70px';
+        });
+    });
 }

@@ -67,5 +67,10 @@ export function animate(){
         //Tours Section
         const toursMainSlide = doc.querySelector('.tours__img-slider > .main');
         setAnimation(isFullyVisible(toursMainSlide), toursMainSlide, false);
+
+        //Team Section
+        const teamSlider = doc.querySelector('.team__slider');
+        const teamSliderDescrs = doc.querySelectorAll('.team__slider-item');
+        setSteppedAnimation(isPartiallyVisible(teamSlider), 0 , teamSliderDescrs,false);
     }
 }
