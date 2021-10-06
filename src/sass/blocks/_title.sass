@@ -1,6 +1,6 @@
 .title
     font-weight: 700
-    font-size: 28px
+    font-size: 24px
     line-height: 28px
     letter-spacing: 10px
     color: #fff
@@ -23,6 +23,9 @@
     &.active
         border-right: 2px solid rgba(255,255,255,.75)
         animation: typewriter 2s steps(44) .3s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal
+    &_nodiv
+        &::after
+            display: none
     
         
 @keyframes typewriter
