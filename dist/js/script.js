@@ -4,6 +4,7 @@ import { animate } from "./animationScripts.js";
 import { promoSlider } from "./promoSlider.js";
 import { aboutSlider } from "./aboutSlider.js";
 import { toursSlider } from "./toursSlider.js";
+import { reviewsSlider } from "./reviewsSlider.js";
 
 const doc = document;
 
@@ -13,6 +14,7 @@ doc.addEventListener("DOMContentLoaded", function() {
     aboutSlider();
     toursSlider();
     teamInit();
+    reviewsSlider();
 
 });
 

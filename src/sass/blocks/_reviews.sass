@@ -1,2 +1,56 @@
 .reviews
-    height: 200px
+    background: url('../img/reviews_bg.jpg') top center / cover no-repeat
+    position: relative
+    padding: 200px 0 80px 0
+    &__divider
+        position: absolute
+        top: -1px
+        left: 0
+        width: 100vw
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__title-wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__slider
+        padding: 20px 0
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        &-navigation
+            height: 50px
+            z-index: 2
+            opacity: .5
+            img
+                height: 50px
+            &:hover
+                opacity: 1
+            &.prev
+                img 
+                    display: none
+.slider
+    padding: 0 20px
+    width: 70%
+    color: #fff
+    border-left: 3px solid $main-color-blue
+    height: 250px
+    overflow: hidden
+    &__inner
+        display: flex
+        flex-direction: column
+        transition: 1s all
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        height: 250px
+        &-text
+            text-align: justify
+        &-author
+            padding-top: 20px
+            font-style: italic
+            

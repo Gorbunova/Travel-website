@@ -71,6 +71,6 @@ export function animate(){
         //Team Section
         const teamSlider = doc.querySelector('.team__slider');
         const teamSliderDescrs = doc.querySelectorAll('.team__slider-item');
-        setSteppedAnimation(isPartiallyVisible(teamSlider), 0 , teamSliderDescrs,false);
+        setSteppedAnimation(isPartiallyVisible(teamSlider), 0 , teamSliderDescrs, true);
     }
 }
