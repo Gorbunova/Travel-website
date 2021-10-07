@@ -1,15 +1,17 @@
 "use strict";
 
-import { animate } from "./animationScripts.js";
+import { animate } from "./animationScript.js";
 import { promoSlider } from "./promoSlider.js";
 import { aboutSlider } from "./aboutSlider.js";
 import { toursSlider } from "./toursSlider.js";
 import { reviewsSlider } from "./reviewsSlider.js";
+import { menuInit } from "./menuScript.js";
 
 const doc = document;
 
 doc.addEventListener("DOMContentLoaded", function() {
     promoInit();
+    menuInit();
     animate();
     aboutSlider();
     toursSlider();

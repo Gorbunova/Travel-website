@@ -28,8 +28,8 @@
     .container
         width: 100%
         padding: 0 30px
-    nav
-        .menu_list
+    .menu
+        &__list
             width: 80%
             li
                 a
@@ -52,8 +52,49 @@
                     
 
 @media (max-width: 576px)
-    nav
-        display: none
+    .main-menu
+        .overlay
+            display: block
+            position: fixed
+            top: 0
+            left: 0
+            width: 100vw
+            height: 100vh
+            background-color: #ffffffab
+            z-index: 4  
+            transition: 1s all
+            transform: translateX(100%)
+            &_opened
+                transform: translateX(0)
+        .hamburger
+            display: block
+            z-index: 4
+        .menu
+            width: 250px
+            height: 100vh
+            position: fixed
+            transform: none
+            padding: 30px
+            z-index: 4
+            opacity: 1
+            transition: 1s all
+            transform: translateX(-100%)
+            &__list
+                display: flex
+                flex-direction: column
+                align-items: start
+                height: 50%
+                list-style-type: circle
+                text-transform: uppercase
+                color: #fff
+                font-size: 35px
+                z-index: 6
+                li
+                    a
+                        font-size: 25px
+            &_opened
+                transform: translateX(0)
+
     .promo
         &__slide
             &-descr
