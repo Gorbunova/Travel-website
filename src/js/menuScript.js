@@ -16,12 +16,12 @@ export function menuInit() {
             menu.classList.toggle('menu_opened');
             setTimeout(()=>{
                 overlay.classList.toggle('overlay_opened');
-            }, 1000);
+            }, 500);
         } else {
             isOpened = true;
             setTimeout(()=>{
                 menu.classList.toggle('menu_opened');
-            }, 1000);
+            }, 500);
             overlay.classList.toggle('overlay_opened');
         }        
     });

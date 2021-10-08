@@ -1,0 +1,37 @@
+@media (max-width: 992px)
+    .why
+        padding: 100px 0 50px 0
+
+@media (max-width: 768px)
+    .why
+        padding: 80px 0 30px 0
+        &__reasons
+            li
+                font-size: 16px
+                span
+                    font-size: 25px
+
+@media (max-width: 576px)
+    .why
+        padding: 60px 0 40px 0
+        &__title
+            font-size: 20px
+        &__reasons
+            grid-template-rows: repeat(2, 1fr)
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 20px
+            &-item
+                img
+                    width: 50px
+                span
+                    margin: 55px auto 0 auto
+                &::after
+                    content: ""
+
+@media (max-width: 400px)
+    .why
+        padding: 40px 0 10px 0
+        li
+            line-height: 22px
+        &__reasons
+            grid-gap: 15px

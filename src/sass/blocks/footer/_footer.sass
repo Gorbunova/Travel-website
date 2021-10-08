@@ -3,6 +3,7 @@
     background: #17313D
     color: #fff
     letter-spacing: 3px
+    font-size: 16px
     .container
         width: 850px
     &__wrapper
@@ -10,6 +11,7 @@
         grid-template-columns: repeat(2, 1fr)
     &__links
         list-style-type: none
+        margin-bottom: 0
         li
             &.main-link
                 a
@@ -23,8 +25,14 @@
     &__contacts
         list-style-type: none
         text-align: right
+        margin-bottom: 0
         li
             margin-bottom: 15px
+            a
+                display: block
+                color: #fff
+                &:hover
+                    text-decoration: none
             img
                 width: 20px
                 margin-right: 10px

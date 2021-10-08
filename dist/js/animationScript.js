@@ -4,6 +4,7 @@ import {isFullyVisible, isPartiallyVisible, setSteppedAnimation, setAnimation} f
 
 export function animate(){
     const doc = document;
+    const screenWidth = window.screen.width;
 
     var isScrolling = false;
  
@@ -71,6 +72,13 @@ export function animate(){
         //Team Section
         const teamSlider = doc.querySelector('.team__slider');
         const teamSliderDescrs = doc.querySelectorAll('.team__slider-item');
-        setSteppedAnimation(isPartiallyVisible(teamSlider), 0 , teamSliderDescrs, true);
+        if (screenWidth >= 577) {
+            setSteppedAnimation(isPartiallyVisible(teamSlider), 0 , teamSliderDescrs, true);
+        } else {
+            teamSliderDescrs.forEach(item => {
+                setAnimation(isFullyVisible(item), item, false);
+            });
+        }
+        
     }
 }
