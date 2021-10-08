@@ -1,0 +1,62 @@
+@media (max-width: 1200px)
+    .team
+        &__slider
+            align-items: stretch
+            &-photo
+                width: 150px
+                height: 150px
+                margin: 40px 0 40px 0
+                &:hover
+                    width: 150px
+                    height: 150px  
+            &-descr
+                max-height: unset
+                flex-grow: 1
+            &-name
+                font-size: 20px
+                line-height: 22px
+            &-text
+                height: calc( 100% - 65px )
+                padding: 10px
+                line-height: 16px
+
+@media (max-width: 992px)
+    .team
+        &__slider
+            flex-wrap: wrap
+            justify-content: center
+            &-item
+                width: 40%
+
+@media (max-width: 768px)
+    .team
+        padding: 60px 0
+        .container
+            width: 90%
+            padding: 0
+        &__slider
+            &-item
+                width: 45%
+            &-name
+                font-weight: 700
+                line-height: 20px
+        &__title-wrapper
+            h3
+                line-height: 20px
+                font-size: 16px
+
+@media (max-width: 576px)
+    .team
+        &__slider
+            &-item
+                width: 100%
+                &::after
+                    content: ""
+                    height: 2px
+                    width: 50%
+                    background-color: $main-color-blue
+                    margin: 10px 0
+
+@media (max-width: 576px)
+    .team
+        padding: 40px 0

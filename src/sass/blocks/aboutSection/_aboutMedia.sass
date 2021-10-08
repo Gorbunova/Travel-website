@@ -1,0 +1,83 @@
+@media (max-width: 1200px)
+    .about
+        &__descr
+            font-size: 18px
+        &__benefits
+            font-size: 18px
+            li
+                padding-left: 50px
+                &::before
+                    left: 10px
+        &__carousel
+            height: 250px
+            width: 450px
+        &::before
+            font-size: 130px
+
+@media (max-width: 992px)
+    .about
+        background: $main-color-dark
+        &__carousel
+            &.active
+                right: 50px
+            &-nav
+                width: 50%
+
+@media (max-width: 870px)
+    .about
+        &__carousel
+            height: 250px
+            width: 350px
+
+@media (max-width: 768px)
+    .about
+        padding: 60px 0 80px 0
+        margin-top: 50vh
+        &__descr
+            font-size: 16px
+            line-height: 24px
+        &__benefits
+            margin: 0
+            li
+                margin-top: 5px
+                font-size: 16px
+        &__carousel
+            margin-top: 20px
+            position: static
+            width: 100%
+            &-nav
+                width: 40%
+                margin: 0 auto
+                label
+                    height: 20px
+                    width: 20px
+        &::before
+            font-size: 130px
+            top: 0px
+
+@media (max-width: 576px)
+    .about
+        &__benefits
+            li
+                &::before
+                    font-size: 20px
+        &__carousel
+            height: 250px
+            width: 100%
+            &-nav
+                width: 60%
+        &::before
+            font-size: 100px
+            left: -60px
+
+@media (max-width: 400px)
+    .about
+        padding: 40px 0 60px
+        &::before
+            font-size: 80px
+        &__benefits
+            li
+                font-size: 15px
+        &__descr
+            font-size: 15px
+            line-height: 20px

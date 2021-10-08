@@ -1,0 +1,48 @@
+@media (max-width: 1200px)
+    .application
+        &__form
+            width: 800px
+
+@media (max-width: 992px)
+    .application
+        &__form
+            width: 90%
+            grid-template: 45px 45px 190px 60px / 1fr
+        &__textarea
+            grid-column: 1 
+        &__btn
+            grid-column: 1
+
+@media (max-width: 768px)
+    .application
+        padding: 60px 0
+        .container
+            padding: 0
+            width: 90%
+            
+
+@media (max-width: 576px)
+    .application
+        &__title-wrapper
+            h3
+                font-size: 16px
+        &__form
+            width: 100%
+            margin-top: 40px
+
+
+@media (max-width: 400px)
+    .application
+        padding: 40px 0
+        &__form
+            margin-top: 20px
+        &__input
+            label
+                font-size: 15px
+        &__title-wrapper
+            h3
+                font-size: 15px
+                letter-spacing: 2px
+                width: 70%
+                line-height: 18px
+                padding: 5px 0
