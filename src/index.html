@@ -38,18 +38,21 @@
 
         <nav class="menu">    
             <ul class="menu__list">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Туры</a></li>
-                <li><a href="#">Команда</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#promo">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#tours">Туры</a></li>
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
     </div>
 
+    <a href="#promo" class="pageup">
+        <img src="icons/main-up-icon.svg" alt="up">
+    </a>
 
-    <section class="promo">
+    <section id="promo" class="promo">
         <div class="promo__logo">
             <img class="promo__logo-icon" src="icons/mountain-icon.svg" alt="logo-icon">
             <h1 class="promo__logo-text">JustTravel</h1>
@@ -101,7 +104,7 @@
 
 
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <h2 class="title">Немного о нас</h2>
             <p class="about__descr">“Мы команда JustTravel, <br>
@@ -142,7 +145,7 @@
         </div>
     </section>
 
-    <section class="why">
+    <section id="why" class="why">
         <div class="container">
         <div class="why__divider">
             <img src="img/mountain divider.svg" alt="mountain-divider">
@@ -166,7 +169,7 @@
     </section>
     
 
-    <section class="tours">
+    <section id="tours" class="tours">
         <div class="container">
             <h2 class="title">Ближайшие туры</h2>
             <div class="tours__slider">
@@ -183,7 +186,7 @@
                         </div>
                         <div class="country__btns">
                             <button class="button">Программа</button>
-                            <button class="button">Оставить заявку</button>
+                            <a href="#application" class="button btn_application">Оставить заявку</a>
                         </div>
                     </div>
                 </div>
@@ -200,7 +203,7 @@
                         </div>
                         <div class="country__btns">
                             <button class="button">Программа</button>
-                            <button class="button">Оставить заявку</button>
+                            <a href="#application" class="button btn_application">Оставить заявку</a>
                         </div>
                     </div>
                 </div>
@@ -218,7 +221,7 @@
                         </div>
                         <div class="country__btns">
                             <button class="button">Программа</button>
-                            <button class="button">Оставить заявку</button>
+                            <a href="#application" class="button btn_application">Оставить заявку</a>
                         </div>
                     </div>
                 </div>
@@ -236,7 +239,7 @@
                         </div>
                         <div class="country__btns">
                             <button class="button">Программа</button>
-                            <button class="button">Оставить заявку</button>
+                            <a href="#application" class="button btn_application">Оставить заявку</a>
                         </div>
                     </div>
                 </div>
@@ -254,7 +257,7 @@
                         </div>
                         <div class="country__btns">
                             <button class="button">Программа</button>
-                            <button class="button">Оставить заявку</button>
+                            <a href="#application" class="button btn_application">Оставить заявку</a>
                         </div>
                     </div>
                 </div>
@@ -272,7 +275,7 @@
                         </div>
                         <div class="country__btns">
                             <button class="button">Программа</button>
-                            <button class="button">Оставить заявку</button>
+                            <a href="#application" class="button btn_application">Оставить заявку</a>
                         </div>
                     </div>
                 </div>
@@ -296,7 +299,7 @@
             
         </div>
     </section>
-    <section class="team">
+    <section  id="team" class="team">
         <div class="container">
             <div class="team__title-wrapper">
                 <h2 class="title title_dark title_center">Наша команда</h2>
@@ -343,7 +346,7 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section id="reviews" class="reviews">
         <div class="container">
             <div class="reviews__divider">
                 <img src="img/Polygon.svg" alt="divider">
@@ -398,7 +401,7 @@
         </div>
     </section>
 
-    <section class="application">
+    <section id="application" class="application">
         <div class="container">
             <div class="application__title-wrapper">
                 <h3>Желаете отправиться в тур с нашей командой?</h3>
@@ -425,7 +428,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="contacts__content">
             <div class="contacts__title-wrapper">
                 <h2 class="title title_center title_nodiv title_dark">Свяжитесь с нами</h2>
@@ -480,13 +483,12 @@
         <div class="container">
             <div class="footer__wrapper">
                 <ul class="footer__links">
-                    <li class="main-link"><a href="#">Главная</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Туры</a></li>
-                    <li><a href="#">Наша команда</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Оставить заявку</a></li>
-                    <li><a href="#">Наши контакты</a></li>
+                    <li class="main-link"><a href="#promo">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#tours">Туры</a></li>
+                    <li><a href="#team">Наша команда</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#application">Оставить заявку</a></li>
                 </ul>
                 <ul class="footer__contacts">
                     <li>Казахстан, г. Алматы, ул. Абая, д. 106/1</li>
