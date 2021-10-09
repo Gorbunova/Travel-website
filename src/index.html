@@ -423,7 +423,15 @@
                     <textarea id="message" name="message"></textarea>
                 </div>
 
-                <button class="application__btn button button_no-margin">Оставить заявку</button>
+                <div class="application__triggers">
+                    <button class="application__btn button button_no-margin">Отправить</button>
+                    <div class="application__policy">
+                        <input type="checkbox" id="application__checkbox" checked required name="policy">
+                        <label for="application__checkbox"></label>
+                        <span>Я согласен(а) с <a href="policy.html" target=»_blank>политикой конфиденциальности</a></span>
+                    </div>
+                </div>
+                
             </form>
         </div>
     </section>
