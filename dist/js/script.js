@@ -21,6 +21,34 @@ doc.addEventListener("DOMContentLoaded", function() {
     }
     reviewsSlider();
 
+    const pageup = doc.querySelector('.pageup');
+    window.addEventListener('scroll', function(e) {
+        if (this.scrollY > 1000) {
+            pageup.style.display = 'block';
+        } else {
+            pageup.style.display = 'none';
+        }
+    });
+
+    const smoothLinks = document.querySelectorAll('a[href^="#"]');
+    for (let smoothLink of smoothLinks) {
+        smoothLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            const id = smoothLink.getAttribute('href');
+
+            doc.querySelector(id).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    };
+
+/*     const btnApplication = doc.querySelector('.btn_application');
+    btnApplication.addEventListener('click', (e)=>{
+        e.preventDefault();
+        window.location.href = '#application';
+    });
+ */
 });
 
 function promoInit() {

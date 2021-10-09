@@ -78,4 +78,24 @@ export function toursSlider(){
             countries[getIndex(step)].style.opacity = '1';
         }, 100);
     }
+
+
+    const titles = doc.querySelectorAll('.country__title');
+    const titlesArr = [];
+    titles.forEach(title => {
+        titlesArr.push(title.innerHTML);
+    });
+
+    const btnApplication = doc.querySelectorAll('.btn_application');
+    const textarea = doc.querySelector('.application__textarea > textarea');
+    console.log(textarea);
+    btnApplication.forEach(btn => {
+        btn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            console.log(titlesArr[step]);
+            textarea.innerHTML = `Добрый день! Хотел(а) бы поподробнее узнать о вашем туре "${titlesArr[step]}".`;
+        });
+    });
+
+
 }
