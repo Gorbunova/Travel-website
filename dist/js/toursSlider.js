@@ -23,6 +23,27 @@ export function toursSlider(){
 
     toursSliderInit();
 
+    const titles = doc.querySelectorAll('.country__title');
+    const titlesArr = [];
+    titles.forEach(title => {
+        titlesArr.push(title.innerHTML);
+    });
+
+    const btnApplication = doc.querySelector('.btn_application');
+    const textarea = doc.querySelector('.application__textarea > textarea');
+    btnApplication.addEventListener('click', (e)=>{
+            e.preventDefault();
+            textarea.innerHTML = 
+                `Добрый день! Хотел(а) бы поподробнее узнать о вашем туре "${titlesArr[getIndex(step)]}".`;
+    });
+
+    const btnTour = doc.querySelector('.btn_tour');
+    btnTour.addEventListener('click', (e)=>{
+            e.preventDefault();
+            const countryId = countries[getIndex(step)].id;
+            window.location.href = `tours/${countryId}.html`;     
+    });
+
     function toursSliderInit() {
         for (let i = -2; i <= 2; i++) {
             slides[getIndex(step+i)].classList.add(stateClasses[i+2]);
@@ -78,23 +99,5 @@ export function toursSlider(){
             countries[getIndex(step)].style.opacity = '1';
         }, 100);
     }
-
-
-    const titles = doc.querySelectorAll('.country__title');
-    const titlesArr = [];
-    titles.forEach(title => {
-        titlesArr.push(title.innerHTML);
-    });
-
-    const btnApplication = doc.querySelectorAll('.btn_application');
-    const textarea = doc.querySelector('.application__textarea > textarea');
-    console.log(textarea);
-    btnApplication.forEach(btn => {
-        btn.addEventListener('click', (e)=>{
-            e.preventDefault();
-            textarea.innerHTML = `Добрый день! Хотел(а) бы поподробнее узнать о вашем туре "${titlesArr[getIndex(step)]}".`;
-        });
-    });
-
 
 }
