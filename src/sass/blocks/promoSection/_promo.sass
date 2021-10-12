@@ -20,18 +20,27 @@
             font-style: italic
             letter-spacing: 5px
             color: #fff
-    &__prompt
+    &__markers
         position: absolute
         bottom: 40px
         left: 50%
         transform: translateX(-50%)
-        letter-spacing: 5px
-        text-align: center
-        color: #fff
-        opacity: .8
         z-index: 2
-        transition: 1s all
-        animation:  flicker 1s linear infinite alternate
+        display: flex
+        align-items: center
+        li
+            margin: 0 5px
+            height: 10px
+            width: 10px
+            border-radius: 100%
+            display: block
+            background-color: #fff
+            opacity: .5
+            transition: 1s all
+            &.active
+                height: 13px
+                width: 13px
+                opacity: .8
     &__carousel
         position: relative
         height: 100vh
@@ -96,10 +105,3 @@
             margin-top: 30px
             font-size: 18px
             letter-spacing: 2px
-
-@keyframes flicker
-  from
-      opacity: .2
-  to
-      opacity: .8
-             
