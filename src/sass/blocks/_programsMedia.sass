@@ -1,0 +1,81 @@
+@media (max-width: 992px)
+    .container
+        width: 90%
+        padding: 0 50px
+
+@media (max-width: 768px)
+    .container
+        padding: 0 30px
+
+    .program
+        &__list
+            grid-template-columns: repeat(3, auto)
+            li
+                padding: 0 11px
+                &.active
+                    a
+                        &::after
+                            width: 100%
+                a
+                    font-size: 17px
+                    &:hover::after
+                        width: 100%
+
+@media (max-width: 576px)
+    .program
+        .container
+            width: 90%
+            padding: 20px
+            h1
+                font-size: 22px
+        &__list
+            padding: 5px
+            grid-template-columns: repeat(2, auto)
+            grid-template-rows: repeat(2, 30px)
+            justify-content: center
+            li
+                &::after
+                    font-size: 10px
+                &:nth-child(2)
+                    &::after
+                        content: ""
+                    
+                &:last-child
+                    grid-column: 1/3
+        &__content
+            h2
+                font-size: 20px
+            h3
+                font-size: 15px
+                &::before
+                    margin-right: 5px
+                    font-size: 16px
+                span
+                    &::after
+                        padding: 0 5px
+            p
+                font-size: 15px
+                line-height: 17px
+            .currency
+                &__item
+                    height: 35px
+                    width: 35px
+
+        &__price
+            font-size: 14px
+            th, td
+                border: 1px solid #bbb6b6
+                padding: 0 5px
+        
+        &__included
+            grid-template-columns:  1fr 
+            &-item
+                font-size: 15px
+                &::before
+                    margin-right: 5px
+
+        &__additionally
+            font-size: 15px
+
+
+
