@@ -1,11 +1,12 @@
 "use strict";
 
 import { animate } from "./animationScript.js";
-import { promoSlider } from "./promoSlider.js";
-import { aboutSlider } from "./aboutSlider.js";
+import { promoSlider } from "./sliders/promoSlider.js";
+import { aboutSlider } from "./sliders/aboutSlider.js";
 import { toursSlider } from "./toursSlider.js";
 import { reviewsSlider } from "./reviewsSlider.js";
 import { menuInit } from "./menuScript.js";
+import { pageUp } from "./pageUp.js";
 
 const doc = document;
 
@@ -20,15 +21,7 @@ doc.addEventListener("DOMContentLoaded", function() {
         teamInit();
     }
     reviewsSlider();
-
-    const pageup = doc.querySelector('.pageup');
-    window.addEventListener('scroll', function(e) {
-        if (this.scrollY > 1000) {
-            pageup.style.display = 'block';
-        } else {
-            pageup.style.display = 'none';
-        }
-    });
+    pageUp();
 
     const smoothLinks = document.querySelectorAll('a[href^="#"]');
     for (let smoothLink of smoothLinks) {
@@ -41,7 +34,7 @@ doc.addEventListener("DOMContentLoaded", function() {
                 block: 'start'
             });
         });
-    };
+    }
 
 /*     const btnApplication = doc.querySelector('.btn_application');
     btnApplication.addEventListener('click', (e)=>{
@@ -52,12 +45,10 @@ doc.addEventListener("DOMContentLoaded", function() {
 });
 
 function promoInit() {
-    const menu = doc.querySelector('nav'),
-          logo = doc.querySelector('.promo__logo'),
+    const logo = doc.querySelector('.promo__logo'),
           logoContainerText = doc.querySelector('.promo__logo-container-text');
 
     logo.classList.add('active');
-    menu.classList.add('active');
     logoContainerText.classList.add('active');
 
     promoSlider();

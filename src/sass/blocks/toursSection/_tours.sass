@@ -1,17 +1,23 @@
 .tours
+    position: relative
     background-color: $main-color-dark
     padding: 80px 0
     overflow: hidden
-    position: relative
     &__slider
         position: relative
-    &__img-slider
-        position: absolute
-        top: 0
-        right: 0
+    &__img-slider        
         margin-top: 115px
         height: 320px
         width: 500px
+        position: absolute
+        top: 0
+        right: 0
+        opacity: 0
+        transform: translateX(100%)
+        transition: 1s all
+        &.active
+            transform: translateX(0)
+            opacity: 1
         img
             position: absolute
             padding: 10px
@@ -20,14 +26,10 @@
             object-fit: cover
             transition: 1s all
             display: none
-            
         .main
-            /** filter: blur(10px) **/
+            display: block
             transition: 1s all
             opacity: 1
-            display: block
-            &.active
-                filter: none
         .next
             display: block
             width: 110%
@@ -36,88 +38,89 @@
             filter: blur(7px)
             opacity: 1
         .prev
+            display: block
             width: 65%
             height: 65%
             transform: rotate(-15deg) translate(55px,420px)
             filter: blur(10px)
             opacity: 1
-            display: block
         .after-next
+            display: block
             width: 110%
             height: 110%
             transform: rotate(20deg) translate(0px,-600px)
             opacity: 0
-            display: block
         .before-prev
+            display: block
             width: 65%
             height: 65%
             transform: rotate(-15deg) translate(55px,500px)
             opacity: 0
-            display: block
-
     &__navigation
         position: absolute
         width: 40px
         top: 50%
-        
         transform: translateY(-50%)
         opacity: .5
-        transition: .5s all
+        transition: 1s all
         &:hover
             opacity: 1
     &__navigation.prev
-        left: -80px
+        left: -200px
+        &.active
+            left: -80px
     &__navigation.next    
-        right: -80px
-
-
-
-.country
-    transition: 1s all
-    &__title
-        transform: translateX(-50px)
-        font-weight: bold
-        font-size: 70px
-        letter-spacing: 30px
-        text-transform: uppercase
-        color: rgba(221, 245, 255, 0.5)
-        margin-top: 20px
-    &__content
-        width: 600px
-        display: flex
-        flex-direction: column
-        align-items: center
-    &__descr
-        min-height: 300px
-        font-size: 17px
-        line-height: 29px
-        letter-spacing: 3px
-        color: #fff
-        margin-bottom: 0
-        text-align: justify
-        span
-            color: $main-color-blue
-            font-weight: bold
-    &__details
-        margin-top: 20px
-        width: 100%
-        display: flex
-        justify-content: space-between
-        margin-bottom: 10px
-        &-item
-            text-align: center
-            width: 170px
-            padding: 5px 20px
-            font-size: 16px
-            letter-spacing: 3px
-            color: #fff
-            border:  1px solid #fff
-            border-radius: 15px
-            animation: increase 1s infinite alternate
+        right: -200px
+        &.active
+            right: -80px
     &__btns
         display: flex
-        width: 100%
+        width: 600px
         justify-content: space-around
+
+    .country
+        transition: 1s all
+        &__title
+            transform: translateX(-50px)
+            font-weight: bold
+            font-size: 70px
+            letter-spacing: 30px
+            text-transform: uppercase
+            color: rgba(221, 245, 255, 0.5)
+            margin-top: 20px
+        &__content
+            width: 600px
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__descr
+            min-height: 300px
+            font-size: 17px
+            line-height: 29px
+            letter-spacing: 3px
+            color: #fff
+            margin-bottom: 0
+            text-align: justify
+            span
+                color: $main-color-blue
+                font-weight: bold
+        &__details
+            margin-top: 20px
+            width: 100%
+            display: flex
+            justify-content: space-between
+            margin-bottom: 10px
+            &-item
+                text-align: center
+                width: 170px
+                padding: 5px 20px
+                font-size: 16px
+                letter-spacing: 3px
+                color: #fff
+                border:  1px solid #fff
+                border-radius: 15px
+                animation: increase 1s infinite alternate
+                    
 
 @keyframes increase
     to

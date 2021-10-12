@@ -4,25 +4,44 @@ export function menuInit() {
     const doc = document;
 
     let isOpened = false;
-
-    const hamburger = doc.querySelector('.hamburger');
-    const menu = doc.querySelector('.menu');
-    const overlay = doc.querySelector('.overlay');
+    
+    const hamburger = doc.querySelector('.hamburger'),
+          menu = doc.querySelector('.menu'),
+          overlay = doc.querySelector('.overlay'),
+          nav = doc.querySelector('nav'),
+          links = doc.querySelectorAll('.menu__item');
+    
+    nav.classList.add('active');
 
     hamburger.addEventListener('click', ()=>{
-        hamburger.classList.toggle('hamburger_opened');
         if (isOpened) {
             isOpened = false;
-            menu.classList.toggle('menu_opened');
-            setTimeout(()=>{
-                overlay.classList.toggle('overlay_opened');
-            }, 500);
+            closeMenu();
         } else {
             isOpened = true;
-            setTimeout(()=>{
-                menu.classList.toggle('menu_opened');
-            }, 500);
-            overlay.classList.toggle('overlay_opened');
+            openMenu();
         }        
     });
+
+    links.forEach(item => {
+        item.addEventListener('click', ()=> {
+            setTimeout(closeMenu, 500);
+        });
+    });
+
+    function openMenu() {
+        setTimeout(()=>{
+            menu.classList.toggle('menu_opened');
+        }, 500);
+        overlay.classList.toggle('overlay_opened');
+        hamburger.classList.toggle('hamburger_opened');
+    }
+
+    function closeMenu() {
+        menu.classList.toggle('menu_opened');
+        setTimeout(()=>{
+            overlay.classList.toggle('overlay_opened');
+        }, 500);
+        hamburger.classList.toggle('hamburger_opened');
+    }
 }

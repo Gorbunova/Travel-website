@@ -1,6 +1,6 @@
 .policy
     background-color: $main-color-light
-    padding: 50px
+    padding: 80px
     h1
         font-weight: 700
         margin-bottom: 20px
@@ -12,3 +12,9 @@
         text-align: justify
         &.sub
             margin: 5px  0 0 30px 
+
+
+@media (max-width: 576px)
+    .menu_policy
+        transform: translateX(-100%)
+        position: fixed

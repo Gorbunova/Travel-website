@@ -3,16 +3,19 @@
     position: relative
     padding: 80px 0
     z-index: 2
+    overflow: hidden
+    .container 
+        position: relative
     &:before
         content: "about us"
-        top: 0
-        font-size: 170px
-        padding-left: 80px
-        color: rgba(255, 255, 255, 0.03)
         position: absolute
+        top: 0
+        padding-left: 80px
+        font-size: 170px
+        color: rgba(255, 255, 255, 0.02)
     &__descr
-        font-weight: 300
         margin-top: 25px
+        font-weight: 300
         font-size: 18px
         line-height: 30px
         letter-spacing: 3px
@@ -20,16 +23,16 @@
     &__benefits
         margin-top: 20px
         li
-            font-size: 17px
-            color: #fff
             margin-top: 12px
-            list-style-type: none
             padding-left: 85px
             position: relative
-            letter-spacing: 3px
             transform: translateX(-50px)
-            transition: .5s all
             opacity: 0
+            font-size: 17px
+            letter-spacing: 3px
+            color: #fff
+            list-style-type: none
+            transition: .5s all
             &.active
                 transform: translateX(0px)
                 opacity: 1
@@ -37,16 +40,17 @@
                 content: '\25A0'
                 position: absolute
                 left: 30px
-                color: $main-color-blue
                 font-size: 40px
                 line-height: 23px
+                color: $main-color-blue
     &__carousel
         position: absolute
-        right: 0
-        bottom: 80px
         height: 280px
         width: 550px
+        right: -50%
+        bottom: -20px
         transition: 1s all
+        box-shadow: 18px -18px 8px 0px rgba(34, 60, 80, .2)
         &-inner
             width: 100%
             height: 100%
@@ -59,13 +63,13 @@
                 opacity: 0
                 transition: 1s all
         &.active
-            right: 10%
+            right: 0
         &-nav
-            opacity: .6
+            width: 30%
             padding: 10px
             display: flex
             justify-content: space-between
-            width: 30%
+            opacity: .6
             label
                 height: 15px
                 width: 15px
@@ -77,13 +81,5 @@
                 display: none
                 &:checked
                     & + label
-
                         transition: 1s all
                         background-color: $main-color-blue
-        
-        
-/** .about__carousel-input
-    &:checked
-        & ~ .about__carousel-label
-            margin-top: 10px
-            background-color: #000 **/

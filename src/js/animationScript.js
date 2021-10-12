@@ -66,8 +66,13 @@ export function animate(){
         setSteppedAnimation(isFullyVisible(listReasons), 0, reasons, true);
 
         //Tours Section
+        const navItems = doc.querySelectorAll('.tours__navigation');
         const toursMainSlide = doc.querySelector('.tours__img-slider > .main');
-        setAnimation(isFullyVisible(toursMainSlide), toursMainSlide, false);
+        const toursSlider = doc.querySelector('.tours__img-slider');
+        navItems.forEach(item => {
+            setAnimation(isFullyVisible(toursMainSlide), item, true);
+        });
+        setAnimation(isFullyVisible(toursMainSlide), toursSlider, true);
 
         //Team Section
         const teamSlider = doc.querySelector('.team__slider');
@@ -76,9 +81,23 @@ export function animate(){
             setSteppedAnimation(isPartiallyVisible(teamSlider), 0 , teamSliderDescrs, true);
         } else {
             teamSliderDescrs.forEach(item => {
-                setAnimation(isFullyVisible(item), item, false);
+                setAnimation(isPartiallyVisible(item), item, false);
             });
         }
+        //Reviews Section
+        const reviewsSlider = doc.querySelector('.reviews__slider');
+        setAnimation(isFullyVisible(reviewsSlider), reviewsSlider, true);
+
+        //Contacts Section
+        const contactsSection = doc.querySelector('.contacts');
+        const contactsItems = doc.querySelectorAll('.contacts__item');
+        const contactsWrapper = doc.querySelector('.contacts__wrapper');
+        setSteppedAnimation(isPartiallyVisible(contactsWrapper), 0 , contactsItems, true);
+        setAnimation(isPartiallyVisible(contactsSection), contactsSection, false);
+
+        //Footer
+        const footer = doc.querySelector('.footer');
+        setAnimation(isPartiallyVisible(footer), footer, false);
         
     }
 }

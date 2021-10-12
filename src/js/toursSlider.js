@@ -23,7 +23,7 @@ export function toursSlider(){
 
     toursSliderInit();
 
-    function toursSliderInit(){
+    function toursSliderInit() {
         for (let i = -2; i <= 2; i++) {
             slides[getIndex(step+i)].classList.add(stateClasses[i+2]);
         }
@@ -92,8 +92,7 @@ export function toursSlider(){
     btnApplication.forEach(btn => {
         btn.addEventListener('click', (e)=>{
             e.preventDefault();
-            console.log(titlesArr[step]);
-            textarea.innerHTML = `Добрый день! Хотел(а) бы поподробнее узнать о вашем туре "${titlesArr[step]}".`;
+            textarea.innerHTML = `Добрый день! Хотел(а) бы поподробнее узнать о вашем туре "${titlesArr[getIndex(step)]}".`;
         });
     });
 
