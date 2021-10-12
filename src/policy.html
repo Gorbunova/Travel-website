@@ -4,22 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JustTravel</title>
+    <title>Политика конфиденциальности</title>
     <meta name="title" content="JustTravel">
 
     <link rel="stylesheet" href="css/stylePolicy.min.css">
 </head>
 <body>
-    <nav class="menu menu_policy">
-        <ul class="menu__list">
-            <li><a href="../#promo">Главная</a></li>
-            <li><a href="../#about">О нас</a></li>
-            <li><a href="../#tours">Туры</a></li>
-            <li><a href="../#team">Команда</a></li>
-            <li><a href="../#reviews">Отзывы</a></li>
-            <li><a href="../#contacts">Контакты</a></li>
-        </ul>
-    </nav>
 
     
     <div class="main-menu">
@@ -29,13 +19,33 @@
             <span></span>
             <span></span>
         </div>
+
+        <nav class="menu menu_new-page">
+            <ul class="menu__list">
+                <li><a href="../#promo">Главная</a></li>
+                <li><a href="../#about">О нас</a></li>
+                <li class="menu__tours"><a href="../#tours">Туры</a>
+                    <ul class="menu__submenu">
+                        <li><a href="tours/georgia.html">Грузия</a></li>
+                        <li><a href="tours/iceland.html">Исландия</a></li>
+                        <li><a href="tours/namibia.html">Намибия</a></li>
+                        <li><a href="tours/finland.html">Финляндия</a></li>
+                        <li><a href="tours/switzerland.html">Швейцария</a></li>
+                        <li><a href="tours/japan.html">Япония</a></li>
+                    </ul>
+                </li>
+                <li><a href="../#team">Команда</a></li>
+                <li><a href="../#reviews">Отзывы</a></li>
+                <li><a href="../#contacts">Контакты</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <a href="#promo" class="pageup">
+    <a href="#policy" class="pageup">
         <img src="icons/main-up-icon.svg" alt="up">
     </a>
     
-    <section class="policy">
+    <section id="policy" class="policy">
         <div class="container">
             <h1>Политика в отношении обработки персональных данных</h1>
             
@@ -165,7 +175,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer active">
         <div class="container">
             <div class="footer__wrapper">
                 <ul class="footer__links">
@@ -190,5 +200,7 @@
             </div>
         </div>
     </footer>
+
+    <script type="module" src="js/scriptNewPage.js"></script>
 </body>
 </html>

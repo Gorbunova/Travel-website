@@ -1,20 +1,18 @@
 .menu
-    background-color: $main-color-dark
     position: absolute
     width: 100%
+    background-color: $main-color-dark
+    transform: translateY(-100%)
     opacity: 0.8
     z-index: 1
     transition: .7s all
-    transform: translateY(-100%)
+    padding: 0 20px
     &.active
         transform: translateY(0)
-    &_policy
-        transform: translateY(0)
-        position: static
+    &_new-page
         opacity: 1
-        z-index: 3
     &__list
-        width: 70%
+        width: 1100px
         height: 50px
         margin: 0 auto
         display: flex
@@ -27,8 +25,8 @@
                 font-size: 18px
                 font-weight: bold
                 line-height: 21px
-                color: #fff
                 letter-spacing: 3px
+                color: #fff
                 &:after
                     content: ""
                     position: absolute
@@ -42,6 +40,32 @@
                     text-decoration: none
                     &:after
                         width: 100%
+    &__tours
+        position: relative
+        &:hover
+            .menu__submenu
+                transform: scaleY(1)
+    &__submenu
+        position: absolute
+        top: 37px
+        left: -100%
+        width: 300%
+        background-color: #1f98ccd3
+        z-index: 10
+        transition: 0.5s all
+        transform: scaleY(0)
+        transform-origin: 0 0
+        padding: 10px
+        li
+            list-style-type: none
+            margin-bottom: 7px
+            &:last-child
+                margin-bottom: 0
+            a
+                &::after
+                    background-color: #fff
+                    height: 1.5px
+
 .main-menu
     .overlay
         display: none

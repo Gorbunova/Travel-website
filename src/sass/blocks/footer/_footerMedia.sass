@@ -1,7 +1,12 @@
 @media (max-width: 992px)
     .footer
         .container
-            width: 100%
+            width: 150%
+            transform: translateX(-15%)
+        &.active
+            .container
+                transform: translateX(0)
+                width: 100%
 
 @media (max-width: 768px)
     .footer

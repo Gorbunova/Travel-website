@@ -10,12 +10,24 @@
             grid-template: 45px 45px 190px 60px / 1fr
         &__textarea
             grid-column: 1 
-        &__btn
+        &__triggers
             grid-column: 1
+        &__policy
+            margin-left: 30px
 
 @media (max-width: 768px)
     .application
         padding: 60px 0
+        &__form
+            grid-template: 45px 45px 190px 120px / 1fr
+        &__triggers
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(2, 1fr)
+        &__btn
+            order: 2
+        &__policy
+            margin: 0 auto
+            order: 1
         .container
             padding: 0
             width: 90%
@@ -36,6 +48,7 @@
         padding: 40px 0
         &__form
             margin-top: 20px
+            gap: 20px
         &__input
             label
                 font-size: 15px

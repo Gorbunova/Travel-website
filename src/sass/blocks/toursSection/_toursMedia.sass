@@ -4,13 +4,17 @@
             width: 80%
         &__img-slider
             width: 45%
-    .country
-        &__content
-            width: 500px
+        .country
+            &__content
+                width: 500px
+            &__btns
+                width: 110%
+            &__details
+                width: 110%
         &__btns
-            width: 110%
-        &__details
-            width: 110%
+            width: 500px
+            button
+                width: 45%
             
 
 @media (max-width: 1200px)
@@ -25,13 +29,13 @@
                 transform: rotate(20deg) translate(0,-370px)
             .prev
                 transform: rotate(-15deg) translate(55px,380px)
-    .country
-        &__title
-            font-size: 50px
-        &__descr
-            font-size: 18px
-            width: 100%
-            align-self: start
+        .country
+            &__title
+                font-size: 50px
+            &__descr
+                font-size: 18px
+                width: 100%
+                align-self: start
 
 @media (max-width: 992px)
     .tours
@@ -41,6 +45,8 @@
             top: -40px
             width: 60%
             height: 230px
+            &.active
+                transform: translateX(50%)
             .main
                 z-index: 1
             .prev
@@ -58,17 +64,18 @@
         &__navigation
             top: 35px
             
-    .country
-        &__title
-            transform: none
-            text-align: center
-        &__content
-            width: 100%
-            margin-top: 250px
-        &__descr
-            min-height: unset
-        &__details
-            width: 100%
+        .country
+            &__title
+                transform: none
+                text-align: center
+                font-size: 40px
+            &__content
+                width: 100%
+                margin-top: 250px
+            &__descr
+                min-height: unset
+            &__details
+                width: 100%
         &__btns
             width: 100%
 
@@ -81,9 +88,11 @@
             width: 35px
             top: 30px
             &.prev
-                left: 0
+                &.active
+                    left: 0
             &.next
-                right: 0
+                &.active
+                    right: 0
         &__img-slider
             margin-top: 100px
             width: 65%
@@ -101,21 +110,19 @@
                 width: 65%
                 height: 65%
 
-    .country
-        &__title
-            font-size: 40px
-            letter-spacing: 10px
-        &__content
-            margin-top: 200px
-        &__descr
-            font-size: 16px
-            line-height: 24px
-        &__details-item
-            font-size: 14px
-            width: 30%
-            padding: 5px 10px
-
-    .country
+        .country
+            &__title
+                font-size: 40px
+                letter-spacing: 10px
+            &__content
+                margin-top: 200px
+            &__descr
+                font-size: 16px
+                line-height: 24px
+            &__details-item
+                font-size: 14px
+                width: 30%
+                padding: 5px 10px
         &__btns
             .button
                 width: 45%
@@ -141,26 +148,26 @@
                 width: 75%
                 height: 75%
 
-    .country
-        &__title
-            font-size: 35px
-            letter-spacing: 2px
-        &__content
-            margin-top: 180px
-        &__descr
-            font-size: 15px
-            line-height: 18px
-            letter-spacing: 2px
-        &__details
-            flex-direction: column
-            margin: 10px auto 0 auto
-            align-items: center
-        &__details-item
-            line-height: 15px
-            margin-bottom: 10px
-            font-size: 15px
-            width: 90%
-            padding: 5px 10px
+        .country
+            &__title
+                font-size: 35px
+                letter-spacing: 2px
+            &__content
+                margin-top: 180px
+            &__descr
+                font-size: 15px
+                line-height: 18px
+                letter-spacing: 2px
+            &__details
+                flex-direction: column
+                margin: 10px auto 0 auto
+                align-items: center
+            &__details-item
+                line-height: 15px
+                margin-bottom: 10px
+                font-size: 15px
+                width: 90%
+                padding: 5px 10px
 
 
 @media (max-width: 400px)
