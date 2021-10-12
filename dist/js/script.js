@@ -50,7 +50,7 @@ function promoInit() {
 
     logo.classList.add('active');
     logoContainerText.classList.add('active');
-
+    
     promoSlider();
 }
 

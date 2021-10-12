@@ -23,6 +23,7 @@ export function promoSlider(){
     let nowPoint;
 
     promoSliderInit();
+    createPromoMarkers();
     promo.addEventListener('mousedown', pressMouseButton);
     promo.addEventListener('mousemove', moveMouse);
     promo.addEventListener('mouseup', releaseMouseButton);
@@ -69,6 +70,8 @@ export function promoSlider(){
             drawLeftSlide(slider, slideWrapper, step, "promo__slide", widthSlide);
             endAnimation();
         }, 1000);
+        
+        setActiveMarker(step);
     }
 
     function scrollLeft() {
@@ -98,6 +101,8 @@ export function promoSlider(){
             drawRightSlide(slider, slideWrapper, step, "promo__slide", widthSlide);
             endAnimation();
         }, 1100);
+
+        setActiveMarker(step);
     }
 
     function startAnimation() {
@@ -220,5 +225,35 @@ export function promoSlider(){
         } else {
             scrollRight();
         }
+    }
+
+    function createPromoMarkers() {
+        const markersContainer = doc.querySelector('.promo__markers');
+        for (let i = 0; i < slider.length; i++) {
+            const liItem = doc.createElement('li');
+            markersContainer.appendChild(liItem);
+        }
+        const markers = doc.querySelectorAll('.promo__markers > li');
+        markers[0].classList.add('active');
+    }
+
+    function makeInactiveAllMarkers() {
+        const markers = doc.querySelectorAll('.promo__markers > li');
+        for (let i = 0; i < markers.length; i++) {
+            markers[i].classList.remove('active');
+        }
+    }
+
+    function setActiveMarker(step) {
+        let stepMarker;
+        if (step === 0) {
+            stepMarker = slider.length-1;
+
+        } else {
+            stepMarker = step - 1;
+        }
+        makeInactiveAllMarkers();
+        const markers = doc.querySelectorAll('.promo__markers > li');
+        markers[stepMarker].classList.add('active');
     }
 }
