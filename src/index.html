@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +14,23 @@
     <meta property="og:url" content="https://metatags.io/">
     <meta property="og:title" content="JustTravel">
     <meta property="og:description" content="Мы команда JustTravel, и путешествия для нас - не бизнес, а стиль жизни!">
-    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://metatags.io/">
     <meta property="twitter:title" content="JustTravel">
-    <meta property="twitter:description" content="Мы команда JustTravel, и путешествия для нас - не бизнес, а стиль жизни!">
-    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <meta property="twitter:description"
+        content="Мы команда JustTravel, и путешествия для нас - не бизнес, а стиль жизни!">
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
     <link rel="shortcut icon" href="icons/mountain-icon.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
     <div class="main-menu">
@@ -36,18 +41,18 @@
             <span></span>
         </div>
 
-        <nav class="menu">    
+        <nav class="menu">
             <ul class="menu__list">
                 <li><a class="menu__item" href="#promo">Главная</a></li>
                 <li><a class="menu__item" href="#about">О нас</a></li>
-                <li class="menu__tours"><a href="../#tours">Туры</a>
+                <li class="menu__item menu__tours"><a href="#tours">Туры</a>
                     <ul class="menu__submenu">
-                        <li><a href="tours/georgia.html">Грузия</a></li>
-                        <li><a href="tours/iceland.html">Исландия</a></li>
-                        <li><a href="tours/namibia.html">Намибия</a></li>
-                        <li><a href="tours/finland.html">Финляндия</a></li>
-                        <li><a href="tours/switzerland.html">Швейцария</a></li>
-                        <li><a href="tours/japan.html">Япония</a></li>
+                        <li class="menu__item"><a href="tours/georgia.html">Грузия</a></li>
+                        <li class="menu__item"><a href="tours/iceland.html">Исландия</a></li>
+                        <li class="menu__item"><a href="tours/namibia.html">Намибия</a></li>
+                        <li class="menu__item"><a href="tours/finland.html">Финляндия</a></li>
+                        <li class="menu__item"><a href="tours/switzerland.html">Швейцария</a></li>
+                        <li class="menu__item"><a href="tours/japan.html">Япония</a></li>
                     </ul>
                 </li>
                 <li><a class="menu__item" href="#team">Команда</a></li>
@@ -70,27 +75,30 @@
         <div class="promo__carousel">
             <div class="promo__slide">
                 <picture>
-                    <source media="(max-width: 576px)" srcset="img/promo_bg/norway-mobile.jpeg">
+                    <source media="(max-width: 576px)" srcset="img/promo_bg/norway-mobile.jpg">
                     <img src="img/promo_bg/norway.jpg" alt="norway" class="promo__slide-img">
                 </picture>
                 <div class="promo__slide-descr">Норвегия</div>
             </div>
             <div class="promo__slide">
                 <picture>
-                    <source media="(max-width: 576px)" srcset="img/promo_bg/iceland-mobile.jpeg">
+                    <source media="(max-width: 576px)" srcset="img/promo_bg/iceland-mobile.jpg">
                     <img class="promo__slide-img" src="img/promo_bg/iceland.jpg" alt="photo">
                 </picture>
                 <div class="promo__slide-descr">Исландия</div>
             </div>
             <div class="promo__slide">
                 <picture>
-                    <source media="(max-width: 576px)" srcset="img/promo_bg/finland-mobile.jpeg">
+                    <source media="(max-width: 576px)" srcset="img/promo_bg/finland-mobile.jpg">
                     <img src="img/promo_bg/finland.jpg" alt="finland" class="promo__slide-img">
                 </picture>
                 <div class="promo__slide-descr">Финляндия</div>
             </div>
             <div class="promo__slide">
-                <img src="img/promo_bg/georgia.jpg" alt="georgia" class="promo__slide-img">
+                <picture>
+                    <source media="(max-width: 576px)" srcset="img/promo_bg/georgia-mobile.jpg">
+                    <img src="img/promo_bg/georgia.jpg" alt="georgia" class="promo__slide-img">
+                </picture>
                 <div class="promo__slide-descr">Грузия</div>
             </div>
             <div class="promo__slide">
@@ -100,13 +108,14 @@
                 </picture>
                 <div class="promo__slide-descr">Вьетнам</div>
             </div>
-        </div>    
-            
+        </div>
+
         <img class="promo__woman" src="img/promo_bg/woman_back.png" alt="woman">
         <div class="promo__logo-container">
             <img class="promo__logo-container-icon" src="icons/mountain-icon-dark.svg" alt="logo-icon">
             <h2 class="promo__logo-container-title">JustTravel</h2>
-            <p class="promo__logo-container-text">Хотите увидеть мир и получить эмоции на всю жизнь?<br>Присоединяйтесь к нашим группам! <br>Авторские экскурсии по всему миру.<br> Групповые и индивидуальные программы.</p> 
+            <p class="promo__logo-container-text">Хотите увидеть мир и получить эмоции на всю жизнь?<br>Присоединяйтесь
+                к нашим группам! <br>Авторские экскурсии по всему миру.<br> Групповые и индивидуальные программы.</p>
             <p class="promo__logo-container-prices">Цены актуальны на 2021 год.</p>
         </div>
     </section>
@@ -129,13 +138,14 @@
             <div class="about__carousel">
                 <div class="about__carousel-inner">
                     <img src="img/about_slider/slide1.jpg" alt="slide1">
-                    <img src="img/about_slider/slide2.jpeg" alt="slide2">
+                    <img src="img/about_slider/slide2.jpg" alt="slide2">
                     <img src="img/about_slider/slide3.jpeg" alt="slide3">
-                    <img src="img/about_slider/slide4.jpeg" alt="slide4">
-                    <img src="img/about_slider/slide5.jpeg" alt="slide5">
+                    <img src="img/about_slider/slide4.jpg" alt="slide4">
+                    <img src="img/about_slider/slide5.jpg" alt="slide5">
                 </div>
                 <div class="about__carousel-nav">
-                    <input checked class="about__carousel-input" type="radio" id="about-slide1" name="slide-number" value="0">
+                    <input checked class="about__carousel-input" type="radio" id="about-slide1" name="slide-number"
+                        value="0">
                     <label class="about__carousel-label" for="about-slide1"></label>
 
                     <input type="radio" id="about-slide2" name="slide-number" value="1">
@@ -156,27 +166,31 @@
 
     <section id="why" class="why">
         <div class="container">
-        <div class="why__divider">
-            <img src="img/mountain divider.svg" alt="mountain-divider">
-        </div>
+            <div class="why__divider">
+                <img src="img/mountain divider.svg" alt="mountain-divider">
+            </div>
             <h2 class="why__title">Почему мы</h2>
             <ul class="why__reasons">
                 <li class="why__reasons-item">
                     <img src="icons/why-icons/experience.svg" alt="">
-                    <span>14</span>лет опыта</li>
+                    <span>14</span>лет опыта
+                </li>
                 <li class="why__reasons-item">
                     <img src="icons/why-icons/tours.svg" alt="">
-                    <span>400</span>туров</li>
+                    <span>400</span>туров
+                </li>
                 <li class="why__reasons-item">
                     <img src="icons/why-icons/customers.svg" alt="">
-                    <span>97</span>клиентов в месяц</li>
+                    <span>97</span>клиентов в месяц
+                </li>
                 <li class="why__reasons-item">
                     <img src="icons/why-icons/mountain.svg" alt="">
-                    <span>200</span>походов в горы</li>
-            </div>
+                    <span>200</span>походов в горы
+                </li>
+        </div>
         </div>
     </section>
-    
+
 
     <section id="tours" class="tours">
         <div class="container">
@@ -187,7 +201,11 @@
                     <div class="country__title">Швейцария</div>
                     <div class="country__content">
                         <p class="country__descr">
-                            <span>Швейцария</span> - страна банков, часов и шоколада. Страна стала воплощением шика и роскоши. Швейцария удачно расположилась в самом центре Европы, здесь, даже не пересекая границы, можно побывать во Франции, Германии и Италии. Швейцарию так и называют «страной трех культур». Вся территория поделена на немецкую, французскую и италийскую, и в каждом из этих районов разговаривают на родном языке и придерживаются традиций своего народа.
+                            <span>Швейцария</span> - страна банков, часов и шоколада. Страна стала воплощением шика и
+                            роскоши. Швейцария удачно расположилась в самом центре Европы, здесь, даже не пересекая
+                            границы, можно побывать во Франции, Германии и Италии. Швейцарию так и называют «страной
+                            трех культур». Вся территория поделена на немецкую, французскую и италийскую, и в каждом из
+                            этих районов разговаривают на родном языке и придерживаются традиций своего народа.
                         </p>
                         <div class="country__details">
                             <div class="country__details-item days">7 дней</div>
@@ -201,7 +219,11 @@
                     <div class="country__title">Япония</div>
                     <div class="country__content">
                         <p class="country__descr">
-                            <span>Япония</span> - в начале вашего путешествия вы откроете для себя небольшой японский город Тамано, бывший феодальный домен с уникальным культурным наследием. Посетите Миядзиму, где находится величественный синтоистский храм, вход в который охраняется великолепным алым торием, внесенным в Список Всемирного наследия ЮНЕСКО. А затем достигнете Пусан и Сакаиминато. Это путешествие станет незабываемым.
+                            <span>Япония</span> - в начале вашего путешествия вы откроете для себя небольшой японский
+                            город Тамано, бывший феодальный домен с уникальным культурным наследием. Посетите Миядзиму,
+                            где находится величественный синтоистский храм, вход в который охраняется великолепным алым
+                            торием, внесенным в Список Всемирного наследия ЮНЕСКО. А затем достигнете Пусан и
+                            Сакаиминато. Это путешествие станет незабываемым.
                         <div class="country__details">
                             <div class="country__details-item days">7 дней</div>
                             <div class="country__details-item price">от 2370$</div>
@@ -214,7 +236,11 @@
                     <div class="country__title">Исландия</div>
                     <div class="country__content">
                         <p class="country__descr">
-                            <span>Исландия</span> - привлекает сотни тысяч туристов каждый год. Об Исландии они узнают по красочным фотографиям и видео со сногсшибательных водопадов, неземных ландшафтов и необычных видов активностей, доступных на этом вулканическом острове. Прогулки по леднику и туры по наблюдению за китами – самые популярные экскурсии в Исландии – доступны в любое время года.
+                            <span>Исландия</span> - привлекает сотни тысяч туристов каждый год. Об Исландии они узнают
+                            по красочным фотографиям и видео со сногсшибательных водопадов, неземных ландшафтов и
+                            необычных видов активностей, доступных на этом вулканическом острове. Прогулки по леднику и
+                            туры по наблюдению за китами – самые популярные экскурсии в Исландии – доступны в любое
+                            время года.
                         </p>
                         <div class="country__details">
                             <div class="country__details-item days">8 дней</div>
@@ -228,7 +254,12 @@
                     <div class="country__title">Намибия</div>
                     <div class="country__content">
                         <p class="country__descr">
-                            <span>Намибия</span> - настоящая африканская экзотика, самое большое количество жарких дней в году, богатый растительный и животный мир, поражающие своей необычностью «лунные» ландшафты, роскошные отели – это все дарят путешественникам туры в Намибию. Отдых в Намибии – это возможность увидеть пустыни Намиб и Калахари, насладиться бурлящим жизнью Виндхуком с его многочисленными рынками, элитными отелями, музеями и редкой красоты архитектурными ансамблями.
+                            <span>Намибия</span> - настоящая африканская экзотика, самое большое количество жарких дней
+                            в году, богатый растительный и животный мир, поражающие своей необычностью «лунные»
+                            ландшафты, роскошные отели – это все дарят путешественникам туры в Намибию. Отдых в Намибии
+                            – это возможность увидеть пустыни Намиб и Калахари, насладиться бурлящим жизнью Виндхуком с
+                            его многочисленными рынками, элитными отелями, музеями и редкой красоты архитектурными
+                            ансамблями.
                         </p>
                         <div class="country__details">
                             <div class="country__details-item days">9 дней</div>
@@ -242,7 +273,10 @@
                     <div class="country__title">Финляндия</div>
                     <div class="country__content">
                         <p class="country__descr">
-                            <span>Финляндия</span> - сердце северной природы. Отдохните и насладитесь чистым воздухом лесов. Отдых в Финляндии может стать по-настоящему незабываемым, он подходит для тех, кто устал от банального пляжного отдыха. Финляндия подарит вам катание на оленях, в собачьих упряжках, поразит изумительной природой. Здесь можно отлично отдохнуть на Рождество.
+                            <span>Финляндия</span> - сердце северной природы. Отдохните и насладитесь чистым воздухом
+                            лесов. Отдых в Финляндии может стать по-настоящему незабываемым, он подходит для тех, кто
+                            устал от банального пляжного отдыха. Финляндия подарит вам катание на оленях, в собачьих
+                            упряжках, поразит изумительной природой. Здесь можно отлично отдохнуть на Рождество.
                         </p>
                         <div class="country__details">
                             <div class="country__details-item days">5 дней</div>
@@ -256,7 +290,11 @@
                     <div class="country__title">Грузия</div>
                     <div class="country__content">
                         <p class="country__descr">
-                            <span>Грузия</span> - это удивительная страна, в которой пересекаются разные культуры, традиции и религии. В этой стране любой турист может найти то, что ему нравится больше всего – заснеженные вершины, субтропическое побережье Черного моря с кипарисами, пихтами и пальмами, уникальные минеральные источники и бальнеологические курорты, захватывающие пейзажи с красивейшей природой, древние крепости, а также очень вкусную кухню.
+                            <span>Грузия</span> - это удивительная страна, в которой пересекаются разные культуры,
+                            традиции и религии. В этой стране любой турист может найти то, что ему нравится больше всего
+                            – заснеженные вершины, субтропическое побережье Черного моря с кипарисами, пихтами и
+                            пальмами, уникальные минеральные источники и бальнеологические курорты, захватывающие
+                            пейзажи с красивейшей природой, древние крепости, а также очень вкусную кухню.
                         </p>
                         <div class="country__details">
                             <div class="country__details-item days">6 дней</div>
@@ -270,15 +308,32 @@
                     <button class="button btn_tour">Программа</button>
                     <a href="#application" class="button btn_application">Оставить заявку</a>
                 </div>
-                
-                <div class="tours__img-slider">
-                    <img src="img/tours_slider/slide1.jpg" alt="swadz">
-                    <img src="img/tours_slider/Japan.jpg" alt="japan">
-                    <img src="img/tours_slider/iceland.jpeg" alt="iceland">
-                    <img src="img/tours_slider/namibiia.jpg" alt="namibia">
-                    <img src="img/tours_slider/finland.jpeg" alt="finland">
-                    <img src="img/tours_slider/georgia.jpeg" alt="georgia">
 
+                <div class="tours__img-slider">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/tours_slider/Switzerland-min.jpg">
+                        <img src="img/tours_slider/Switzerland.jpg" alt="switzerland">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/tours_slider/Japan-min.jpg">
+                        <img src="img/tours_slider/Japan.jpg" alt="japan">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/tours_slider/iceland-min.jpg">
+                        <img src="img/tours_slider/iceland.jpg" alt="iceland">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/tours_slider/namibiia-min.jpg">
+                        <img src="img/tours_slider/namibiia.jpg" alt="namibia">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/tours_slider/finland-min.jpg">
+                        <img src="img/tours_slider/finland.jpg" alt="finland">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/tours_slider/georgia-min.jpg">
+                        <img src="img/tours_slider/georgia.jpg" alt="georgia">
+                    </picture>
                 </div>
                 <a class="tours__navigation prev">
                     <img src="icons/left-icon.svg" alt="previous">
@@ -287,10 +342,10 @@
                     <img src="icons/right-icon.svg" alt="next">
                 </a>
             </div>
-            
+
         </div>
     </section>
-    <section  id="team" class="team">
+    <section id="team" class="team">
         <div class="container">
             <div class="team__title-wrapper">
                 <h2 class="title title_dark title_center">Наша команда</h2>
@@ -303,7 +358,9 @@
                     </div>
                     <div class="team__slider-descr">
                         <h3 class="team__slider-name">Логинов<br>Роман</h3>
-                        <p class="team__slider-text">Роман - фанат путешествий. 10 лет в нашей команде. Пересёк на лодке северную Атлантику, на самолёте с паровым двигателем пролетел над водопадом Анхель, пообедал в аэростате на высоте более семи тысяч метров.</p>
+                        <p class="team__slider-text">Роман - фанат путешествий. 10 лет в нашей команде. Пересёк на лодке
+                            северную Атлантику, на самолёте с паровым двигателем пролетел над водопадом Анхель, пообедал
+                            в аэростате на высоте более семи тысяч метров.</p>
                     </div>
                 </div>
                 <div class="team__slider-item">
@@ -312,7 +369,9 @@
                     </div>
                     <div class="team__slider-descr">
                         <h3 class="team__slider-name">Алия<br>Алиева</h3>
-                        <p class="team__slider-text">Профессиональная альпинистка, занимается организацией горных туров. «Альпинизм — это множество крайних ситуаций, которые идеально подходят для того, чтобы узнать себя...» — считает Алия. </p>
+                        <p class="team__slider-text">Профессиональная альпинистка, занимается организацией горных туров.
+                            «Альпинизм — это множество крайних ситуаций, которые идеально подходят для того, чтобы
+                            узнать себя...» — считает Алия. </p>
                     </div>
                 </div>
                 <div class="team__slider-item">
@@ -321,7 +380,9 @@
                     </div>
                     <div class="team__slider-descr">
                         <h3 class="team__slider-name">Артур<br>Арамян</h3>
-                        <p class="team__slider-text">Дипломированный туристический гид и экскурсовед, координатор наших туров. Побывал в 80 странах мира и продолжает исследовать новые места. Сопровождает наши туры в страны Азии и Африки.</p>
+                        <p class="team__slider-text">Дипломированный туристический гид и экскурсовед, координатор наших
+                            туров. Побывал в 80 странах мира и продолжает исследовать новые места. Сопровождает наши
+                            туры в страны Азии и Африки.</p>
                     </div>
                 </div>
                 <div class="team__slider-item">
@@ -330,7 +391,9 @@
                     </div>
                     <div class="team__slider-descr">
                         <h3 class="team__slider-name">Мия<br>Лурия</h3>
-                        <p class="team__slider-text">Мия - руководитель туристических групп. Создает групповые и индивидуальные программы туров. Является тематическим гидом, помогает скорректировать программу тура, основываясь на личных интересах клиентов.</p>
+                        <p class="team__slider-text">Мия - руководитель туристических групп. Создает групповые и
+                            индивидуальные программы туров. Является тематическим гидом, помогает скорректировать
+                            программу тура, основываясь на личных интересах клиентов.</p>
                     </div>
                 </div>
             </div>
@@ -352,35 +415,76 @@
                 <div class="slider">
                     <div class="slider__inner">
                         <div class="slider__item">
-                            <p class="slider__item-text">Хочу выразить огромную благодарность турагентству JustTravel, за хорошо подобранный тур. Мы с семьей слетали в Намибию. Спасибо нашему гиду Артуру и так же очень большое спасибо менеджеру Мие, которая в кратчайшие сроки сумела подобрать  индивидуальную программу для отдыха с детьми. Отдохнули на УРА, ваше турагентству просто класс!!! Желаю Вам процветания, а так же я обязательно к вам вернусь но уже с большой компанией на отдых!</p>
+                            <p class="slider__item-text">Хочу выразить огромную благодарность турагентству JustTravel,
+                                за хорошо подобранный тур. Мы с семьей слетали в Намибию. Спасибо нашему гиду Артуру и
+                                так же очень большое спасибо менеджеру Мие, которая в кратчайшие сроки сумела подобрать
+                                индивидуальную программу для отдыха с детьми. Отдохнули на УРА, ваше турагентству просто
+                                класс!!! Желаю Вам процветания, а так же я обязательно к вам вернусь но уже с большой
+                                компанией на отдых!</p>
                             <p class="slider__item-author">Илья, 37 лет, г. Алматы</p>
                         </div>
                         <div class="slider__item">
-                            <p class="slider__item-text">Вчера прилетели из солнечной Японии, хочу сразу поблагодарить менеджера Алию за великолепный отдых. Человек, который живёт своей работой, всегда на связи, по любому вопросу даст исчерпывающий ответ. Подобрала нам тур по нашим параметрам, и даже больше чем мы ожидали. Отель был лучшим вариантом для нашего отдыха с моим молодым человеком. Мы уже не в первые ездим по курортам, но в этот раз был самый лучший отдых. Рекомендую всем доверить свой отдых этой команде!</p>
+                            <p class="slider__item-text">Вчера прилетели из солнечной Японии, хочу сразу поблагодарить
+                                менеджера Алию за великолепный отдых. Человек, который живёт своей работой, всегда на
+                                связи, по любому вопросу даст исчерпывающий ответ. Подобрала нам тур по нашим
+                                параметрам, и даже больше чем мы ожидали. Отель был лучшим вариантом для нашего отдыха с
+                                моим молодым человеком. Мы уже не в первые ездим по курортам, но в этот раз был самый
+                                лучший отдых. Рекомендую всем доверить свой отдых этой команде!</p>
                             <p class="slider__item-author">Алексей, 42 года, г. Алматы</p>
                         </div>
                         <div class="slider__item">
-                            <p class="slider__item-text">Прекрасная фирма , прекрасные люди. всем довольна! Желающим отдохнуть в Исландии - сюда. Огромное спасибо Алие! Очень быстро подобрала тур для нашей семьи, учла все моменты и предложила отель , которым мы остались довольны! Теперь только к ней. А вообще, просто приятно было общаться и обращаться, для меня это очень важно, ведь отдых начинается уже с момента подбора тура!</p>
+                            <p class="slider__item-text">Прекрасная фирма , прекрасные люди. всем довольна! Желающим
+                                отдохнуть в Исландии - сюда. Огромное спасибо Алие! Очень быстро подобрала тур для нашей
+                                семьи, учла все моменты и предложила отель , которым мы остались довольны! Теперь только
+                                к ней. А вообще, просто приятно было общаться и обращаться, для меня это очень важно,
+                                ведь отдых начинается уже с момента подбора тура!</p>
                             <p class="slider__item-author">Алена, 35 лет, г. Киев</p>
                         </div>
                         <div class="slider__item">
-                            <p class="slider__item-text">Хочу выразить слова благодарности Роману, очень хороший и отзывчивый человек. Всё доступно и разборчиво объяснил,помогл выбрать тур. Посоветовал куда сходить, что посмотреть. Всегда с нами был на связи во время отдыха. Дорогие отдыхающие если вы хотите хорошо и классно отдохнуть - тогда вам к Логинову Роману. Ещё раз большое спасибо, обязательно на следующей год будем вместе с ним и всей компанией менеджеров планировать наш отпуск.</p>
+                            <p class="slider__item-text">Хочу выразить слова благодарности Роману, очень хороший и
+                                отзывчивый человек. Всё доступно и разборчиво объяснил,помогл выбрать тур. Посоветовал
+                                куда сходить, что посмотреть. Всегда с нами был на связи во время отдыха. Дорогие
+                                отдыхающие если вы хотите хорошо и классно отдохнуть - тогда вам к Логинову Роману. Ещё
+                                раз большое спасибо, обязательно на следующей год будем вместе с ним и всей компанией
+                                менеджеров планировать наш отпуск.</p>
                             <p class="slider__item-author">Марат, 38 лет, г. Нур-Султан</p>
                         </div>
                         <div class="slider__item">
-                            <p class="slider__item-text">Для начала хочу поблагодарить вас за работу! Мы очень хотели уехать, в каждом турагентстве нам предлагали туры в Грузию от миллиона тенге. Мы думали, если уж Грузия ( мы здесь были ранее), то самый бюджетный. Зашли на ваш сайт, муж ценам не верил до последнего. Хочу поблагодарить вас за качественную работу, вы подобрали нам именно то, что нужно! Сопроводительное письмо предоставили! В отель должны были заселить в 14:00. А благодаря письму заселили уже через пол часа. В 10-10:30. Вечером ожидал сюрприз в номере огромная бутылка вина и арбуз!! Спасибо огромное! Мы очень довольны!</p>
+                            <p class="slider__item-text">Для начала хочу поблагодарить вас за работу! Мы очень хотели
+                                уехать, в каждом турагентстве нам предлагали туры в Грузию от миллиона тенге. Мы думали,
+                                если уж Грузия ( мы здесь были ранее), то самый бюджетный. Зашли на ваш сайт, муж ценам
+                                не верил до последнего. Хочу поблагодарить вас за качественную работу, вы подобрали нам
+                                именно то, что нужно! Сопроводительное письмо предоставили! В отель должны были заселить
+                                в 14:00. А благодаря письму заселили уже через пол часа. В 10-10:30. Вечером ожидал
+                                сюрприз в номере огромная бутылка вина и арбуз!! Спасибо огромное! Мы очень довольны!
+                            </p>
                             <p class="slider__item-author">Малика, 25 лет, г. Алматы</p>
                         </div>
                         <div class="slider__item">
-                            <p class="slider__item-text">Всем доброго дня! Только вернклись из Финляндии! Отпуск удался! Берем туры только здесь уже не первый год. Всегда очень оперативное оформление, компетентные сотрудники. Клиентоориентированность на 100 процентов! На агентство можно положиться как на себя. Постоянно держали в курсе вылета, сообщали очень оперативно об изменении вылета. Да и вообще как к родным относятся, очень приятное общение! Огромная благодарность Артуру и Мие!</p>
+                            <p class="slider__item-text">Всем доброго дня! Только вернклись из Финляндии! Отпуск удался!
+                                Берем туры только здесь уже не первый год. Всегда очень оперативное оформление,
+                                компетентные сотрудники. Клиентоориентированность на 100 процентов! На агентство можно
+                                положиться как на себя. Постоянно держали в курсе вылета, сообщали очень оперативно об
+                                изменении вылета. Да и вообще как к родным относятся, очень приятное общение! Огромная
+                                благодарность Артуру и Мие!</p>
                             <p class="slider__item-author">Ернар, 54 года, г. Нур-Султан</p>
                         </div>
                         <div class="slider__item">
-                            <p class="slider__item-text">Добрый день. Очень хочу поблагодарить Алиеву Алию за организацию нашего отдыха. После того, как мы с Алией познакомились 4 года назад, я только через неё в отпуск летаю, и ни разу не пожалела… у компании всегда всё чётко, ясно, на любой вкус и кошелёк. Я..,и моя семья… и мои друзья, мы все Ваши постоянные клиенты. Спасибо большое!</p>
+                            <p class="slider__item-text">Добрый день. Очень хочу поблагодарить Алиеву Алию за
+                                организацию нашего отдыха. После того, как мы с Алией познакомились 4 года назад, я
+                                только через неё в отпуск летаю, и ни разу не пожалела… у компании всегда всё чётко,
+                                ясно, на любой вкус и кошелёк. Я..,и моя семья… и мои друзья, мы все Ваши постоянные
+                                клиенты. Спасибо большое!</p>
                             <p class="slider__item-author">Ида, 36 лет, г. Уральск</p>
                         </div>
                         <div class="slider__item">
-                            <div class="slider__item-text">Огромная благодарность вашему агенству за организацию нашего отдыха, начиная с этапа планирования и до окончания нашего прекрасного путешествия!!! Мы получили достоверную информацию по всем вопросам, наши ожидания полностью оправдались. Потрясающе, как трепетно гиды относятся к своим клиентам: постоянно на связи (интересуются как мы прошли регистрацию? как долетели? как разместились? всем ли довольны?) Следующий отпуск обязательно будем планировать вместе с Вами!!! Ещё раз, большое человеческое СПАСИБО!!!</div>
+                            <div class="slider__item-text">Огромная благодарность вашему агенству за организацию нашего
+                                отдыха, начиная с этапа планирования и до окончания нашего прекрасного путешествия!!! Мы
+                                получили достоверную информацию по всем вопросам, наши ожидания полностью оправдались.
+                                Потрясающе, как трепетно гиды относятся к своим клиентам: постоянно на связи
+                                (интересуются как мы прошли регистрацию? как долетели? как разместились? всем ли
+                                довольны?) Следующий отпуск обязательно будем планировать вместе с Вами!!! Ещё раз,
+                                большое человеческое СПАСИБО!!!</div>
                             <div class="slider__item-author">Асель, 30 лет, г. Алматы</div>
                         </div>
                     </div>
@@ -398,12 +502,12 @@
                 <h3>Желаете отправиться в тур с нашей командой?</h3>
                 <h2 class="title title_center title_nodiv">Оставьте заявку</h2>
             </div>
-            <form action="#" class="application__form">
+            <form action="https://formspree.io/f/xknkloke" class="application__form" method="POST">
                 <div class="application__input">
                     <label for="name">Ваше имя</label>
                     <input id="name" type="text" name="name" required>
                 </div>
-                
+
                 <div class="application__input">
                     <label for="email">Ваш e-mail</label>
                     <input id="email" type="email" name="email" required>
@@ -419,10 +523,11 @@
                     <div class="application__policy">
                         <input type="checkbox" id="application__checkbox" checked required name="policy">
                         <label for="application__checkbox"></label>
-                        <span>Я согласен(а) с <a href="policy.html" target=»_blank>политикой конфиденциальности</a></span>
+                        <span>Я согласен(а) с <a href="policy.html" target=»_blank>политикой
+                                конфиденциальности</a></span>
                     </div>
                 </div>
-                
+                <p class="application__status"></p>
             </form>
         </div>
     </section>
@@ -459,8 +564,8 @@
                     </div>
                     <div class="contacts__title">Email</div>
                     <div class="contacts__text">
-                        <a href="mailto:traveltravel@mail.ru">traveltravel@mail.ru</a> 
-                        <a href="mailto:travel@mail.ru">travel@mail.ru</a> 
+                        <a href="mailto:traveltravel@mail.ru">traveltravel@mail.ru</a>
+                        <a href="mailto:travel@mail.ru">travel@mail.ru</a>
                     </div>
                 </div>
                 <div class="contacts__item">
@@ -469,12 +574,15 @@
                     </div>
                     <div class="contacts__title">Instagram</div>
                     <div class="contacts__text">
-                        <a href="https://www.instagram.com/just_travel/">@just_travel</a>
+                        <a href="https://www.instagram.com/just_travel/" target="_blank">@just_travel</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="contacts__map" id="map">
+        <!-- <div class="contacts__map" id="map"> -->
+        <iframe class="contacts__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.90556148565!2d76.84070411547621!3d43.21147008889966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836830a67a2209%3A0x664da79e9ea220d5!2z0LzQuNC60YDQvtGA0LDQudC-0L0g0JzQsNC80YvRgC0xIDEwMywg0JDQu9C80LDRgtGL!5e0!3m2!1sru!2skz!4v1634118651648!5m2!1sru!2skz"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
@@ -490,22 +598,24 @@
                     <li><a href="#application">Оставить заявку</a></li>
                 </ul>
                 <ul class="footer__contacts">
-                    <li> <address>Казахстан, г. Алматы, мкр. Мамыр, д. 103</address> </li>
+                    <li>
+                        <address>Казахстан, г. Алматы, мкр. Мамыр, д. 103</address>
+                    </li>
                     <li>
                         <a href="tel:+77772322121">+7 (777) 232 21 21</a>
                         <a href="tel:+77772322121">+7 (777) 232 21 21</a>
                         <a href="tel:+77772322121">+7 (777) 232 21 21</a>
                     </li>
                     <li>
-                        <img src="icons/contacts-icons/instagram-white.svg" alt="instagram"><a class="instagram"  href="https://www.instagram.com/just_travel/">@just_travel</a>
+                        <img src="icons/contacts-icons/instagram-white.svg" alt="instagram"><a class="instagram"
+                            target="_blank" href="https://www.instagram.com/just_travel/">@just_travel</a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
 
-    <script type="module" src="js/script.js"></script>
-    <script src="js/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnY-JQi3rOjdjMfuOcoTqqTR8FHD6kK3U&callback=initMap&libraries=&v=weekly"></script>
+    <script src="js/bundle.js"></script>
 </body>
+
 </html>

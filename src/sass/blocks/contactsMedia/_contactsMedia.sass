@@ -1,8 +1,9 @@
 @media (max-width: 992px)
     .contacts
-        grid-template: repeat(2, 1fr) / 1fr
+        grid-template: repeat(2, auto) / 1fr
         .contacts__map
             transform: translateX(0)
+            min-height: 400px
         &__wrapper
             width: 100%
             grid-template: 1fr / repeat(4, 1fr)
@@ -18,7 +19,7 @@
 @media (max-width: 576px)
     .contacts
         &__wrapper
-            grid-template: repeat(2, 1fr) / repeat(2, 1fr)
+            grid-template: repeat(2, auto) / repeat(2, 1fr)
             margin: 20px auto 
         &__title
             font-size: 16px
@@ -27,6 +28,7 @@
             height: 50px
             img
                 width: 20px
+
 @media (max-width: 400px)
     .contacts
         padding: 40px 0 0 0
