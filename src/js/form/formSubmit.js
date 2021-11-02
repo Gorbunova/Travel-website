@@ -4,8 +4,8 @@
 function formSubmit(e, form) {
 	const doc = document;
 	e.preventDefault();
-	var status = doc.querySelector('.application__status');
-	var data = new FormData(e.target);
+	let status = doc.querySelector('.application__status');
+	let data = new FormData(e.target);
 	fetch(e.target.action, {
 		method: form.method,
 		body: data,
